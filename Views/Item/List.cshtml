@@ -1,0 +1,13 @@
+@model TaskOrder.ViewModel.ItemListViewModel
+@{
+    ViewData["Title"] = "Itens";
+}
+<h1>@Model.CategoriaAtual</h1>
+<div class="container">
+    <div class="row">
+        @foreach (var Item in Model.Itens)
+        {
+            <partial name="_Card" for="@Item"></partial>
+        }
+    </div>
+</div>
