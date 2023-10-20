@@ -280,3 +280,9 @@ C:\Dev\TaskOrder\obj\Debug\net7.0\TaskOrder.pdb
 C:\Dev\TaskOrder\obj\Debug\net7.0\TaskOrder.genruntimeconfig.cache
 C:\Dev\TaskOrder\obj\Debug\net7.0\ref\TaskOrder.dll
 C:\Dev\TaskOrder\obj\Debug\net7.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Dev\TaskOrder\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Dev\TaskOrder\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Dev\TaskOrder\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Dev\TaskOrder\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Dev\TaskOrder\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Dev\TaskOrder\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

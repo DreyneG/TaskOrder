@@ -1,4 +1,5 @@
 using System;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TaskOrder.Models;
 using TaskOrder.Repositories.Interfaces;
@@ -6,6 +7,7 @@ using TaskOrder.ViewModel;
 
 namespace TaskOrder.Controllers
 {
+    [Authorize]
     public class CarrinhoController : Controller
     {
         private readonly Carrinho _carrinho;
