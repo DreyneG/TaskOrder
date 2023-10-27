@@ -4,7 +4,7 @@
 {
     <form asp-area="" asp-controller="Account" asp-action="Logout" id="logoutForm" method="post" class="navbar-left">
         <ul class="nav navbar-nav navbar-left">
-            <button type="submit" style="width:auto" class="nav-link btn btn-link">
+            <button type="submit" class="nav-link btn btn-link mt-1 ms-4">
                 <strong> Logout : @User.Identity.Name &nbsp; </strong>
             </button>
         </ul>
@@ -12,11 +12,8 @@
 }
 else
 {
-    <ul class="nav navbar-nav navbar-left">
-
-        <a class="nav-link text-dark" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)"
-            style="color:black">&nbsp; Log in&nbsp; </a>
-        <a class="nav-link text-dark" asp-controller="Account" asp-action="Register"
-            style="color:black">&nbsp;Registro&nbsp;&nbsp;&nbsp;</a>
+    <ul class="nav navbar-nav navbar-left ms-4 ps-4">
+        <a class="nav-link btn btn-danger text-white ms-4 me-3" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)">&nbsp; Log in&nbsp; </a>
+        <a class="nav-link btn btn-outline-danger text-danger me-2 ps-3" asp-controller="Account" asp-action="Register">&nbsp;Registro&nbsp;&nbsp;&nbsp;</a>
     </ul>
 }

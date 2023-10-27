@@ -39,10 +39,97 @@ button.accept-policy {
   line-height: inherit;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+
+@media only screen and (max-width: 484px) {
+  .pc {
+      display: none;
+  }
+
+  .mobile {
+      display: flex;
+  }
+
+  .tamanhoc{
+    width: 10em;
+    height: 5em;
+  }
+
+  .dropdown-toggle::after {
+      content: none;
+  }
+
+  .tamanhodoslideteste {
+      height: 200px;
+      width: 100%;
+      background-color: black;
+  }
+
+  .alturanav {
+      height: 0;
+      width: max-content;
+  }
+
+}
+
+@media only screen and (min-width: 485px) {
+  .pc {
+      display: flex;
+  }
+
+  .tamanhodoslideteste {
+      height: 400px;
+      width: 100%;
+      background-color: black;
+  }
+
+  .tamanhoc{
+    width: 24em;
+    height: 5em;
+  }
+
+  .mobile {
+      display: none;
+  }
+
+  .alturanav {
+      height: 100px;
+      width: max-content;
+  }
+
+  .car-sub-fonte{
+      font-size: 5px;
+  }
+
+}
+.semponto {
+  list-style: none;
+}
+
+.emlinha {
+  display: inline;
+}
+
+.vermelho {
+  background-color: red;
+}
+
+.tamanho {
+  height: 100px;
+}
+
+
+.icones {
+  font-size: 2rem;
+}
+
+.menu {
+  width: 20em;
+}
+
+

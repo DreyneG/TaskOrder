@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QiG7ibvfy8PYFdxPhdcbAAUKtJmv3UEAo5LQurqh8vQ=",
+  "Hash": "w9mk7UtHDvsdImhJGfP2HTWVaNuGpWrzglrkzIWckAM=",
   "Source": "TaskOrder",
   "BasePath": "_content/TaskOrder",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Dev\\TaskOrder\\wwwroot\\imagens\\logo.png",
+      "SourceId": "TaskOrder",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Dev\\TaskOrder\\wwwroot\\",
+      "BasePath": "_content/TaskOrder",
+      "RelativePath": "imagens/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\logo.png"
     },
     {
       "Identity": "C:\\Dev\\TaskOrder\\wwwroot\\js\\site.js",

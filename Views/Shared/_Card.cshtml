@@ -1,15 +1,15 @@
-<div class="col-sm-4 col-md-4 col-lg-4">
-    <p><img src="@Model.ImagemPequenaUrl" class="img-fluid" asp-append-version="true"></p>
-    <h3>Preço : @Model.Preco.ToString("c")</h3>
-    <h4>
-        <a asp-controller="Item" asp-action="Details" asp-route-itemId="@Model.ItemId">@Model.Nome</a>
-    </h4>
+<link rel="stylesheet" href="_Layout.cshtml.css">
+<div class="col-5 col-md-4 col-lg-4 rounded-4 card shadow p-0 align-items-center me-2 ms-4 mt-3 tamanhoc">
+    <p><img src="@Model.ImagemPequenaUrl" class="img-fluid tamanhoc" asp-append-version="true"></p>
+    <h3>
+        <a class="text-decoration-none text-dark" asp-controller="Item" asp-action="Details" asp-route-itemId="@Model.ItemId">@Model.Nome</a>
+    </h3>
     <p>@Model.DescricaoCurta</p>
     <div>
         <p class="button">
-            <a class="btn btn-primary" id="cartButton" asp-controller="Carrinho"
+            <a class="btn btn-danger fw-bold text-white" id="cartButton" asp-controller="Carrinho"
                 asp-action="AdicionarItemNoCarrinhoCompra" asp-route-itemId="@Model.ItemId">
-                Incluir no Carrinho
+                @Model.Preco.ToString("c")
             </a>
         </p>
     </div>

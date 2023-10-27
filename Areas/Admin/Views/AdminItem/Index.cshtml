@@ -4,10 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Itens</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-danger">Criar Novo</a>
 </p>
 <table class="table">
     <thead>
@@ -24,10 +24,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.Preco)
             </th>
-            <th>
+            <th class="col-3">
                 @Html.DisplayNameFor(model => model.ImagemPequenaUrl)
             </th>
-            <th>
+            <th class="col-3">
                 @Html.DisplayNameFor(model => model.ImagemUrl)
             </th>
             <th>
@@ -58,10 +58,10 @@
                 @Html.DisplayFor(modelItem => item.Preco)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ImagemPequenaUrl)
+                <img class="w-100 h-100" src="@item.ImagemPequenaUrl" alt="">
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ImagemUrl)
+                <img src="@item.ImagemUrl" alt="">
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Ativo)
@@ -73,9 +73,9 @@
                 @Html.DisplayFor(modelItem => item.Categoria.CategoriaId)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ItemId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ItemId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ItemId">Delete</a>
+                <a class="text-decoration-none text-secondary" asp-action="Edit" asp-route-id="@item.ItemId">Editar</a>
+                <a class="text-decoration-none text-secondary" asp-action="Details" asp-route-id="@item.ItemId">Detalhes</a>
+                <a class="text-decoration-none text-secondary" asp-action="Delete" asp-route-id="@item.ItemId">Remover</a>
             </td>
         </tr>
 }
